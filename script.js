@@ -63,6 +63,9 @@ function displayWeather(data) {
     else if (description.includes('haze')) {
         backgroundImage = 'url(https://images.unsplash.com/photo-1599059021750-82716ae2b661?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)'
     }
+    else if (description.includes('smoke')) {
+        backgroundImage = 'url(https://images.pexels.com/photos/691574/pexels-photo-691574.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)';
+    }
      else {
         backgroundImage = 'url(https://images.unsplash.com/photo-1561484930-998b6a7b22e8?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)';
     }
