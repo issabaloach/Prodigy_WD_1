@@ -70,11 +70,14 @@ function displayWeather(data) {
     document.body.style.backgroundImage = backgroundImage;
 
     weatherInfo.innerHTML = `
-        <h2 class="text-xl font-bold mb-2">${data.name}</h2>
-        <p class="text-lg capitalize">${description}</p>
-        <p class="text-lg">Temperature: ${temp}°C</p>
-        <p class="text-lg">Humidity: ${humidity}%</p>
-        <p class="text-lg">Wind Speed: ${windSpeed} m/s</p>
+
+        <h2 class="text-2xl font-bold mb-2">${data.name}</h2>
+        <div class="mt-2 grid grid-rows-2 grid-flow-col gap-4">
+        <p class="text-lg capitalize font-bold text-2xl">${description}</p>
+        <i class="fa-solid fa-water"> ${humidity} %</i>
+        <i class="fa-solid fa-temperature-three-quarters"> ${temp} °C </i>
+        <i class="fa-solid fa-wind"> ${windSpeed} m/h </i>
+        </div>
     `;
 }
 

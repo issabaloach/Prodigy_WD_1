@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
         body {
@@ -14,10 +15,10 @@
         }
     </style>
 </head>
-<body class="bg-gradient-to-r from-indigo-500 to-blue-500 min-h-screen flex items-center justify-center">
+<body class="md bg-gradient-to-r from-indigo-500 to-blue-500 min-h-screen flex items-center justify-center">
     <div class="bg-gray-300 p-8 rounded-lg shadow-lg max-w-md w-full">
         <h1 class="text-2xl font-bold mb-4 text-center">Weather App</h1>
-        <div class="mb-4 flex flex-col items-center">
+        <div class="md mb-4 flex flex-col items-center">
             <div class="w-full max-w-xs p-5 bg-gray-300 rounded-lg font-mono text-center">
                 <label class="block text-gray-700 text-sm font-bold mb-2" for="locationInput">Weather Search</label>
                 <input
@@ -34,7 +35,7 @@
                Search 
             </button>
         </div>
-        <div id="weatherInfo" class="text-center mt-5 text-2xl ease-in duration-300"></div>
+        <div  id="weatherInfo" class="md text-center mt-5 text-2xl ease-in duration-300"></div>
     </div>
     <script src="script.js"></script>
 </body>
