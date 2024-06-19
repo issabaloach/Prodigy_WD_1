@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            transition: background-image 0.6s ease-in-out;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-r from-indigo-500 to-blue-500 min-h-screen flex items-center justify-center">
+    <div class="bg-gray-300 p-8 rounded-lg shadow-lg max-w-md w-full">
+        <h1 class="text-2xl font-bold mb-4 text-center">Weather App</h1>
+        <div class="mb-4 flex flex-col items-center">
+            <div class="w-full max-w-xs p-5 bg-gray-300 rounded-lg font-mono text-center">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="locationInput">Weather Search</label>
+                <input
+                  id="locationInput"
+                  class="text-sm custom-input w-full px-7 py-2 border border-gray-300 rounded-lg shadow-sm transition duration-300 ease-in-out transform focus:-translate-y-1 focus:outline-blue-300 hover:shadow-lg hover:border-blue-300 bg-gray-100"
+                  placeholder="Search"
+                  type="text"
+                />
+            </div>
+            <button 
+              onclick="fetchWeather()"
+              class="bg-purple-500 text-white px-9 py-2 mt-4 rounded-full transition duration-200 ease-in-out hover:bg-purple-700 active:bg-purple-900 focus:outline-none"
+            >
+               Search
+            </button>
+        </div>
+        <div id="weatherInfo" class="text-center mt-5 text-2xl ease-in duration-300"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
